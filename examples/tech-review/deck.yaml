@@ -1,0 +1,54 @@
+deck_id: tech-review-example
+title: Technical System Review
+subtitle: A disciplined structure for system, infra, and model-behavior reviews
+footer: Technical Review / Academic Deck Compiler
+contact: owner, repo, or design doc
+assets_dir: assets/images
+slides:
+  - kind: cover
+    kicker: System review
+    title: A technical review should expose the control surfaces
+    subtitle: Replace this with the system name, review date, and audience.
+    metrics:
+      - value: "4"
+        label: control surfaces
+      - value: "2"
+        label: failure modes
+      - value: "1"
+        label: launch decision
+    labels: [Data, Model, Serving, Evaluation]
+  - kind: map
+    kicker: System map
+    title: The review follows the failure path through the system
+    subtitle: Show where quality is created, lost, measured, and recovered.
+    labels: [Input, Retrieval, Model, Gate, User]
+    bullets:
+      - Identify the point where bad inputs first become expensive.
+      - Distinguish model failure from data, serving, and evaluation failure.
+      - Keep the launch decision tied to measurable gates.
+  - kind: split
+    kicker: Decision
+    title: The important choice is where to add control, not where to add complexity
+    subtitle: Use this slide to compare two architectures, training strategies, or evaluation paths.
+    bullets:
+      - Option A is simpler but leaves the failure mode unobserved.
+      - Option B adds instrumentation where the system can recover.
+      - The recommendation should be explicit.
+  - kind: loop
+    kicker: Quality loop
+    title: Production quality improves when failures become training data
+    subtitle: Replace this with the real bad-case mining, regression, or monitoring loop.
+    bullets:
+      - Mine failures from real traces.
+      - Assign ownership to retrieval, generation, parsing, or user ambiguity.
+      - Promote fixed cases into regression gates.
+  - kind: close
+    kicker: Recommendation
+    title: The decision should be legible after one slide
+    subtitle: Summarize what to ship, hold, measure, or redesign.
+    labels: [Ship, Hold, Measure, Redesign]
+    bullets:
+      - State the decision.
+      - Name the evidence that supports it.
+      - Name the riskiest remaining assumption.
+    note: Replace with review owner and repo.

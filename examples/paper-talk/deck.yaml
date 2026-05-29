@@ -1,0 +1,60 @@
+deck_id: paper-talk-example
+title: Paper Talk Example
+subtitle: Turning a dense paper into a claim-led conference-style talk
+footer: Paper Talk / Academic Deck Compiler
+contact: paper, repo, or project link
+assets_dir: assets/images
+slides:
+  - kind: cover
+    kicker: Paper talk
+    title: A paper talk should explain the bet, not recite the PDF
+    subtitle: Replace this with paper title, authors, venue, and audience.
+    metrics:
+      - value: "1"
+        label: central bet
+      - value: "3"
+        label: evidence anchors
+      - value: "12"
+        label: minute talk
+    labels: [Problem, Method, Result, Limits]
+  - kind: thesis
+    kicker: Thesis
+    title: The contribution becomes clear when the failure mode is visible
+    subtitle: The audience needs to understand what breaks before it can appreciate the method.
+    bullets:
+      - Start with the baseline failure, not the architecture.
+      - Define the measurement that makes the failure inspectable.
+      - Introduce the method as the smallest intervention that changes the result.
+  - kind: process
+    kicker: Method
+    title: The method should read as three design decisions
+    subtitle: Compress the implementation into the choices that matter.
+    labels: [Represent, Intervene, Verify]
+    bullets:
+      - Represent the problem with a tractable signal.
+      - Intervene where the signal changes behavior.
+      - Verify on the setting where shortcuts usually survive.
+  - kind: evidence
+    kicker: Result
+    title: The strongest figure should carry the result slide
+    subtitle: Add a crop or native redraw of the paper's main result figure.
+    metrics:
+      - value: metric
+        label: main result
+      - value: baseline
+        label: comparison
+      - value: source
+        label: figure or table
+    bullets:
+      - Keep only the part of the figure that proves the headline.
+      - Add a short source note if the figure is reproduced.
+  - kind: close
+    kicker: Conclusion
+    title: End by naming what changed after the paper
+    subtitle: A good close gives the audience a compact answer to "so what?"
+    labels: [Contribution, Evidence, Limits, Next]
+    bullets:
+      - What the paper made measurable.
+      - What the method changed.
+      - Where the claim may not hold.
+    note: Replace with citation and repo.

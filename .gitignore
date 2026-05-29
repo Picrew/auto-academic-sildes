@@ -1,0 +1,52 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Build and render output
+outputs/
+dist/
+build/
+*.pptx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+!docs/**/*.png
+!examples/**/README.md
+
+# Local reference checkouts. Fetch these when needed; do not publish mirrors.
+vendor/
+references/
+
+# Private fixtures and harvested profile material
+examples/junjie-portfolio/
+examples/people-profiles/
+data/private/
+private/
+*.local.yaml
+*.private.yaml
+*.secret.yaml
+
+# Python and test caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+
+# LaTeX aux files
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.xdv
+*.fls
+*.fdb_latexmk
+
+# Local validation logs with private fixture names or generated paths
+docs/HIGHSENSE_VALIDATION.md
+docs/HIGHSENSE_ITERATION_LOG.md

@@ -1,0 +1,97 @@
+deck_id: technical-research-talk
+title: Technical Research Talk
+subtitle: A claim-led deck that turns evidence into a memorable argument
+footer: Academic Deck Compiler
+contact: ''
+assets_dir: assets/images
+slides:
+- kind: cover
+  kicker: Research talk
+  title: A strong technical deck is an argument, not a document
+  subtitle: Use this starter for paper talks, systems reviews, portfolio decks, and
+    thesis-style presentations.
+  bullets: []
+  metrics:
+  - value: '1'
+    label: central claim
+  - value: 3-5
+    label: evidence anchors
+  - value: '2'
+    label: render routes
+  labels:
+  - Narrative
+  - Evidence
+  - Design
+  - Delivery
+  image: null
+  note: ''
+- kind: thesis
+  kicker: Positioning
+  title: Make the audience remember the judgment, not the page count
+  subtitle: 'Every slide should answer one question: what should the room believe
+    after seeing this evidence?'
+  bullets:
+  - Replace topic titles with action titles that state the takeaway.
+  - Keep details in notes or appendix unless they change the argument.
+  - Choose images because they prove something, not because they decorate.
+  - Render both editable PPTX and disciplined Beamer, then pick the route that serves
+    the room.
+  metrics: []
+  labels: []
+  image: null
+  note: ''
+- kind: map
+  kicker: Narrative spine
+  title: Build the talk as a reliability loop
+  subtitle: This default loop is generic; replace each case with your paper, system,
+    or project evidence.
+  bullets:
+  - 'Question: what uncertainty or pain point starts the talk?'
+  - 'Failure: what breaks in the baseline or existing practice?'
+  - 'Signal: what measurement, artifact, or user trace makes it visible?'
+  - 'Intervention: what design change moves the system?'
+  metrics: []
+  labels:
+  - Question
+  - Failure
+  - Signal
+  - Intervention
+  - Result
+  image: null
+  note: ''
+- kind: evidence
+  kicker: Evidence page
+  title: One strong proof beats five related screenshots
+  subtitle: Use a cropped figure, table, trace, or UI region as the visual center
+    of the page.
+  bullets:
+  - State the claim in the headline.
+  - Crop until labels are readable at presentation distance.
+  - 'Add two callouts at most: one for the metric, one for the interpretation.'
+  metrics:
+  - value: claim
+    label: headline
+  - value: source
+    label: caption
+  - value: next
+    label: implication
+  labels: []
+  image: null
+  note: ''
+- kind: close
+  kicker: Close
+  title: End with a conclusion, not a thank-you slide
+  subtitle: The closing slide should summarize the contribution and leave useful hooks
+    for discussion.
+  bullets:
+  - Restate the central claim in different words.
+  - Name the evidence that made the claim credible.
+  - Offer concrete directions for Q&A or collaboration.
+  metrics: []
+  labels:
+  - What changed
+  - Why it matters
+  - Where to go next
+  - Questions
+  image: null
+  note: Replace with contact, repo, paper, or project links.

@@ -1,0 +1,20 @@
+[project]
+name = "academic-deck-compiler"
+version = "0.1.0"
+description = "A claim-led academic/technical slides compiler: editable PPTX, Beamer, HTML preview, evidence audit, and review packages."
+requires-python = ">=3.10"
+dependencies = [
+  "pillow>=10.0.0",
+  "python-pptx>=0.6.23",
+  "pyyaml>=6.0.0",
+]
+
+[project.scripts]
+academic-deck = "academic_deck_compiler.cli:main"
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
