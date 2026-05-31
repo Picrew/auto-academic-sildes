@@ -9,6 +9,7 @@ This repository is meant to be public and reusable. Keep the compiler, public ne
 - `tests/`
 - `docs/` files that describe generic workflows
 - `.codex/skills/` files that do not contain private fixture details
+- generated `.agents/skills/` and `.claude/skills/` bridge files
 - neutral examples such as `examples/starter`, `examples/paper-talk`, and `examples/tech-review`
 - `README.md`, `README_zh.md`, `.gitignore`, `pyproject.toml`
 
@@ -37,4 +38,3 @@ When using external projects as design references, link to them in documentation
 - beautiful-html-templates: <https://github.com/zarazhangrui/beautiful-html-templates>
 
 If a local workflow needs a reference checkout, clone it into `vendor/` and leave it untracked.
-

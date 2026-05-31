@@ -1,6 +1,6 @@
 ---
 name: design-context-protocol
-description: Run a disciplined design-context workflow for HTML-first slides: verify facts, collect assets, choose visual grammar, make 2-slide showcases, compare directions, and critique outputs to avoid AI-slop.
+description: "Run a disciplined design-context workflow for HTML-first slides: verify facts, collect assets, choose visual grammar, make 2-slide showcases, compare directions, and critique outputs to avoid AI-slop."
 ---
 
 # Design Context Protocol Skill

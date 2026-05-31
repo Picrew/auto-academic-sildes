@@ -71,6 +71,43 @@ uv run academic-deck build \
   --fail-on-layout
 ```
 
+## Agent 推荐用法
+
+这个项目最适合让 Codex 或 Claude Code 通过 repo 内的 skills 来使用，而不是让 agent 直接“凭感觉做一套 PPT”。推荐提示方式是：先调用 skill，让 agent 写或改 `deck.yaml`，再跑质量检查、证据检查、HTML-first 渲染、布局审查、contact sheet 目检和修复循环。
+
+Codex：
+
+```text
+$paper-to-html-talk Build a 12-slide HTML-first talk from <paper.pdf>. Use compare-grammars, run with --fail-on-layout, inspect the contact sheet, and package the result.
+```
+
+Claude Code：
+
+```text
+/paper-to-html-talk Build a 12-slide HTML-first talk from <paper.pdf>. Use compare-grammars, run with --fail-on-layout, inspect the contact sheet, and package the result.
+```
+
+常用入口：
+
+- `$academic-deck` / `/academic-deck`：通用学术或技术 slides。
+- `$html-first-deck` / `/html-first-deck`：视觉保真优先的 HTML-first deck。
+- `$paper-to-html-talk` / `/paper-to-html-talk`：论文汇报、seminar、journal club。
+- `$public-profile-deck` / `/public-profile-deck`：基于公开资料的人物、实验室、公司或项目 profile。
+- `$deck-iteration-judge` / `/deck-iteration-judge`：已有 contact sheet 后做审美和证据复查。
+
+skills 布局：
+
+- `.codex/skills/` 是详细 skill 的 canonical source，也保留给现有 Codex desktop/local skill 场景。
+- `.agents/skills/` 是当前 Codex repo 级发现入口。
+- `.claude/skills/` 是 Claude Code repo 级发现入口。
+
+维护 skills 时，先改 `.codex/skills/<skill>/SKILL.md`，再同步桥接入口：
+
+```bash
+uv run python scripts/sync_agent_skill_bridges.py
+uv run python scripts/sync_agent_skill_bridges.py --check
+```
+
 ## 流程
 
 ```text
@@ -170,7 +207,9 @@ src/academic_deck_compiler/   compiler、renderer、audit、CLI
 templates/                    visual grammar 设计说明
 examples/                     可公开的中性样例
 docs/                         架构、流程、证据、风格说明
-.codex/skills/                给 Codex 使用的 slides skills
+.codex/skills/                详细 deck skills 的 canonical source
+.agents/skills/               生成的 Codex skill 桥接入口
+.claude/skills/               生成的 Claude Code skill 桥接入口
 tests/                        单测和 smoke tests
 ```
 
@@ -195,4 +234,3 @@ tests/                        单测和 smoke tests
 - 密集论文图仍然需要认真裁剪或重画。
 - 浏览器截图、LaTeX、PowerPoint PDF export 都依赖本地工具。
 - visual judge 只是第一层启发式判断，最终仍要看 contact sheet。
-

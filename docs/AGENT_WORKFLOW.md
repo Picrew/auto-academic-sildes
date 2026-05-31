@@ -2,6 +2,26 @@
 
 This repository is designed for iterative Codex or Claude Code use. The agent should treat slide generation as compilation, not decoration.
 
+## Skill Entrypoints
+
+Use the repo skills as the normal entrypoint for agent work:
+
+- Codex: invoke `$academic-deck`, `$html-first-deck`, `$paper-to-html-talk`, `$public-profile-deck`, or `$deck-iteration-judge`.
+- Claude Code: invoke the matching slash skill, such as `/academic-deck`, `/html-first-deck`, `/paper-to-html-talk`, `/public-profile-deck`, or `/deck-iteration-judge`.
+
+Skill directories are intentionally split by tool:
+
+- `.codex/skills/` is the canonical source for detailed skill instructions.
+- `.agents/skills/` contains generated Codex bridge skills.
+- `.claude/skills/` contains generated Claude Code bridge skills.
+
+Edit only the canonical `.codex/skills/<skill>/SKILL.md` file, then run:
+
+```bash
+uv run python scripts/sync_agent_skill_bridges.py
+uv run python scripts/sync_agent_skill_bridges.py --check
+```
+
 ## Loop
 
 1. **Ingest**: read the paper, CV, repo, screenshots, or project notes. For folders, start with `uv run academic-deck ingest --source <source-folder> --out <source-pack>`.

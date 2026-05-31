@@ -73,6 +73,43 @@ uv run academic-deck build \
   --fail-on-layout
 ```
 
+## Agent Usage
+
+The recommended way to use this project with Codex or Claude Code is through repo-scoped skills plus the compiler loop. Ask the agent to invoke a skill, produce or edit `deck.yaml`, run the quality/evidence/layout checks, inspect the contact sheet, and revise before exporting.
+
+Codex:
+
+```text
+$paper-to-html-talk Build a 12-slide HTML-first talk from <paper.pdf>. Use compare-grammars, run with --fail-on-layout, inspect the contact sheet, and package the result.
+```
+
+Claude Code:
+
+```text
+/paper-to-html-talk Build a 12-slide HTML-first talk from <paper.pdf>. Use compare-grammars, run with --fail-on-layout, inspect the contact sheet, and package the result.
+```
+
+Useful entry points:
+
+- `$academic-deck` / `/academic-deck` for general academic or technical decks.
+- `$html-first-deck` / `/html-first-deck` when visual fidelity is the priority.
+- `$paper-to-html-talk` / `/paper-to-html-talk` for paper talks and journal clubs.
+- `$public-profile-deck` / `/public-profile-deck` for public-source profile decks.
+- `$deck-iteration-judge` / `/deck-iteration-judge` after a rendered contact sheet exists.
+
+Skill layout:
+
+- `.codex/skills/` is the canonical source for detailed deck skills and is kept for existing Codex desktop/local skill setups.
+- `.agents/skills/` is the current repo-discovered Codex entry point.
+- `.claude/skills/` is the Claude Code entry point.
+
+When changing skills, edit `.codex/skills/<skill>/SKILL.md` first, then run:
+
+```bash
+uv run python scripts/sync_agent_skill_bridges.py
+uv run python scripts/sync_agent_skill_bridges.py --check
+```
+
 ## The Pipeline
 
 ```text
@@ -174,7 +211,9 @@ src/academic_deck_compiler/   compiler, renderers, audits, CLI
 templates/                    visual grammar design notes
 examples/                     public neutral fixtures
 docs/                         architecture, workflow, evidence, style notes
-.codex/skills/                Codex skills for deck building and review
+.codex/skills/                canonical detailed deck skills
+.agents/skills/               generated Codex skill bridges
+.claude/skills/               generated Claude Code skill bridges
 tests/                        unit and smoke tests
 ```
 
@@ -199,4 +238,3 @@ Private harvested profiles, personal portfolio fixtures, generated screenshots, 
 - Dense paper figures still need careful cropping or redrawing.
 - Browser screenshots, LaTeX, and PowerPoint PDF export depend on local tools.
 - The visual judge is a first-pass heuristic; contact-sheet review is still part of the workflow.
-
