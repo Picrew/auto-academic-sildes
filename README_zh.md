@@ -226,6 +226,7 @@ tests/                        单测和 smoke tests
 - [Visual grammars](docs/VISUAL_GRAMMARS.md)
 - [Visual QA](docs/VISUAL_QA.md)
 - [发布边界](docs/PUBLICATION_POLICY.md)
+- [匿名案例图库](docs/anonymous_case_gallery)
 
 ## 限制
 

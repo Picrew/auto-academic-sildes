@@ -230,6 +230,7 @@ Private harvested profiles, personal portfolio fixtures, generated screenshots, 
 - [Visual grammars](docs/VISUAL_GRAMMARS.md)
 - [Visual QA](docs/VISUAL_QA.md)
 - [Publication policy](docs/PUBLICATION_POLICY.md)
+- [Anonymous case gallery](docs/anonymous_case_gallery)
 
 ## Limitations
 

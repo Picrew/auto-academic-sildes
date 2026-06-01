@@ -1,0 +1,83 @@
+deck_id: anonymous-system-gate
+title: Anonymous System Review Case
+subtitle: A synthetic launch-gate review with generic workflow labels and local evidence
+visual_grammar: maison-research-catalog
+footer: Anonymous Case B / Academic Deck Compiler
+contact: synthetic fixture
+assets_dir: examples/anonymous-cases/assets/images
+slides:
+  - kind: cover
+    kicker: Case B
+    title: The safest launch path is a narrower gate with better memory
+    subtitle: A neutral system-review fixture for evaluation, monitoring, and release decisions.
+    metrics:
+      - value: "5"
+        label: control surfaces
+      - value: "3"
+        label: gate metrics
+      - value: "0"
+        label: real users
+    labels: [Collect, Label, Replay, Gate, Monitor]
+  - kind: map
+    kicker: Review path
+    title: The review follows the failure before it reaches the launch decision
+    subtitle: The deck keeps quality decisions attached to a small number of control surfaces.
+    labels: [Trace, Triage, Regression, Decision, Drift]
+    bullets:
+      - A trace sample enters the review loop before it becomes a release blocker.
+      - Labels separate data problems from model behavior and interface drift.
+      - Replay gates preserve project memory between launches.
+  - kind: split
+    kicker: Decision
+    title: The useful tradeoff is a smaller launch surface, not a larger checklist
+    subtitle: The recommendation is framed as a release decision instead of an audit report.
+    bullets:
+      - Ship only the path where failures replay cleanly.
+      - Hold ambiguous traffic until labels can separate the failure types.
+      - Monitor drift with a window that maps back to the replay set.
+    metrics:
+      - value: ship
+        label: narrow path
+      - value: hold
+        label: ambiguous path
+      - value: replay
+        label: evidence gate
+      - value: drift
+        label: monitor window
+    labels: [Ship path, Hold path, Replay gate, Drift watch]
+  - kind: evidence
+    layout: proof-showcase
+    kicker: Synthetic system map
+    title: A launch gate becomes useful when every stage returns evidence
+    subtitle: The diagram is a fictional local workflow, not a real product map.
+    image: case_b_launch_gate_map.png
+    evidence:
+      image: case_b_launch_gate_map.png
+      crop: {x: 0.04, y: 0.06, w: 0.92, h: 0.86}
+      caption: "Synthetic launch-gate map with collection, labeling, replay, decision, and monitoring."
+      source: "Local anonymous fixture image generated for Case B in examples/anonymous-cases/assets/images."
+      callouts:
+        - {x: 0.67, y: 0.42, text: replay before gate}
+        - {x: 0.52, y: 0.75, text: metrics stay actionable}
+    bullets:
+      - Evidence returns to the gate instead of becoming a one-time report.
+      - The map keeps the launch decision legible.
+  - kind: close
+    kicker: Recommendation
+    title: The review is done when the decision is visible on one page
+    subtitle: A calm system deck should let a team name what ships, what waits, and what must be measured next.
+    metrics:
+      - value: ship
+        label: replay-clean path
+      - value: hold
+        label: unlabeled traffic
+      - value: watch
+        label: drift window
+      - value: next
+        label: review trigger
+    labels: [Ship narrow, Hold unknowns, Monitor drift, Review trigger]
+    bullets:
+      - Preserve the launch gate that has replay evidence.
+      - Move ambiguous cases into labeling before expansion.
+      - Review the drift window against the same synthetic gate.
+      - Keep the decision attached to observable failure.

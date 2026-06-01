@@ -1,0 +1,91 @@
+deck_id: anonymous-workspace-profile
+title: Anonymous Workspace Profile Case
+subtitle: A synthetic profile-style deck with generic project names and no personal identity
+visual_grammar: maison-research-catalog
+footer: Anonymous Case C / Academic Deck Compiler
+contact: synthetic fixture
+assets_dir: examples/anonymous-cases/assets/images
+slides:
+  - kind: cover
+    kicker: Case C
+    title: A profile deck reads stronger when the work is organized as evidence
+    subtitle: This fixture uses a fictional workspace surface instead of a person, lab, or company.
+    metrics:
+      - value: "4"
+        label: anonymous artifacts
+      - value: "1"
+        label: source rail
+      - value: "0"
+        label: private facts
+    labels: [Selected work, Evaluation, Notes, Synthesis]
+  - kind: thesis
+    kicker: Positioning
+    title: The profile should feel like a source index, not a biography
+    subtitle: A calm profile deck can still be dense when each row has a job.
+    metrics:
+      - value: index
+        label: reading structure
+      - value: source
+        label: evidence texture
+      - value: loop
+        label: project logic
+      - value: neutral
+        label: privacy stance
+    bullets:
+      - Replace identity claims with a visible structure of selected work.
+      - Keep project names generic so the fixture stays reusable and private.
+      - Treat screenshots as source surfaces, not decorative thumbnails.
+      - Use the rail to show how each anonymous artifact supports the same claim.
+  - kind: matrix
+    kicker: Work map
+    title: The workspace is organized around the same evidence loop
+    subtitle: Each row describes a project role without naming a real project.
+    labels: [Project Alpha, Project Beta, Evaluation Notes, Demo Trace]
+    bullets:
+      - Alpha shows how the problem is framed.
+      - Beta shows how the system changes.
+      - Evaluation notes show how claims are checked.
+      - Demo trace shows how the result becomes inspectable.
+    metrics:
+      - value: loop
+        label: organizing principle
+      - value: source
+        label: profile texture
+      - value: "4"
+        label: artifact rows
+      - value: neutral
+        label: naming rule
+  - kind: split
+    layout: artifact-showcase
+    kicker: Synthetic workspace
+    title: Source rails make the profile feel specific
+    subtitle: The local image uses only generic project labels.
+    image: case_c_workspace_index.png
+    evidence:
+      image: case_c_workspace_index.png
+      crop: {x: 0.03, y: 0.06, w: 0.94, h: 0.86}
+      caption: "Synthetic workspace index."
+      source: "Local anonymous Case C fixture."
+      callouts: []
+    bullets:
+      - The rail gives the profile a reading path.
+      - Generic artifact names keep the case anonymous.
+  - kind: close
+    kicker: Synthesis
+    title: The profile succeeds when the viewer can retell the work structure
+    subtitle: "The final slide keeps the case reusable: no names, no claims about real people, and no private evidence."
+    metrics:
+      - value: no names
+        label: privacy check
+      - value: source
+        label: reading path
+      - value: loop
+        label: synthesis
+      - value: reuse
+        label: fixture goal
+    labels: [Anonymous, Source-led, Reusable]
+    bullets:
+      - Describe the profile as an evidence loop.
+      - Keep the strongest artifact large enough to inspect.
+      - Preserve the neutral language for public reuse.
+      - Let the viewer retell the structure without needing identity context.
