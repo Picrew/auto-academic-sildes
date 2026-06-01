@@ -73,6 +73,14 @@ uv run academic-deck build \
   --fail-on-layout
 ```
 
+## Case Gallery
+
+Three anonymous fixtures show the intended loop: claim-led YAML, local synthetic evidence, HTML-first rendering, layout audit, and a final visual review. See the source decks in [`examples/anonymous-cases`](examples/anonymous-cases) and the full contact sheets in [`docs/anonymous_case_gallery`](docs/anonymous_case_gallery).
+
+| Paper talk | System review | Workspace profile |
+|---|---|---|
+| <img src="docs/anonymous_case_gallery/case-a-paper-proof.png" alt="Anonymous paper-talk proof slide" width="300"> | <img src="docs/anonymous_case_gallery/case-b-system-proof.png" alt="Anonymous system-review proof slide" width="300"> | <img src="docs/anonymous_case_gallery/case-c-workspace-artifact.png" alt="Anonymous workspace profile artifact slide" width="300"> |
+
 ## Agent Usage
 
 The recommended way to use this project with Codex or Claude Code is through repo-scoped skills plus the compiler loop. Ask the agent to invoke a skill, produce or edit `deck.yaml`, run the quality/evidence/layout checks, inspect the contact sheet, and revise before exporting.

@@ -71,6 +71,14 @@ uv run academic-deck build \
   --fail-on-layout
 ```
 
+## 匿名案例展示
+
+下面三个匿名 fixture 展示推荐流程：先写 claim-led YAML，使用本地合成证据图，走 HTML-first 渲染和布局审查，最后人工看 contact sheet。源文件在 [`examples/anonymous-cases`](examples/anonymous-cases)，完整 contact sheets 在 [`docs/anonymous_case_gallery`](docs/anonymous_case_gallery)。
+
+| 论文汇报 | 系统评审 | Workspace profile |
+|---|---|---|
+| <img src="docs/anonymous_case_gallery/case-a-paper-proof.png" alt="匿名论文汇报证据页" width="300"> | <img src="docs/anonymous_case_gallery/case-b-system-proof.png" alt="匿名系统评审证据页" width="300"> | <img src="docs/anonymous_case_gallery/case-c-workspace-artifact.png" alt="匿名 workspace profile artifact 页" width="300"> |
+
 ## Agent 推荐用法
 
 这个项目最适合让 Codex 或 Claude Code 通过 repo 内的 skills 来使用，而不是让 agent 直接“凭感觉做一套 PPT”。推荐提示方式是：先调用 skill，让 agent 写或改 `deck.yaml`，再跑质量检查、证据检查、HTML-first 渲染、布局审查、contact sheet 目检和修复循环。

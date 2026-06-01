@@ -9,3 +9,11 @@ These rendered contact sheets are synthetic fixtures for agent-driven deck QA. T
 - Case C: anonymous workspace/profile index.
 
 Each source deck lives under `examples/anonymous-cases/`. The local evidence images are generated fixtures under `examples/anonymous-cases/assets/images/`.
+
+## Selected Slides
+
+| Case | Selected slide | Full contact sheet |
+|---|---|---|
+| Case A | ![Case A proof](case-a-paper-proof.png) | [contact sheet](case-a-paper-contact-sheet.png) |
+| Case B | ![Case B proof](case-b-system-proof.png) | [contact sheet](case-b-system-contact-sheet.png) |
+| Case C | ![Case C artifact](case-c-workspace-artifact.png) | [contact sheet](case-c-workspace-contact-sheet.png) |
