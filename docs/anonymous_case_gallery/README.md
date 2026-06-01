@@ -12,8 +12,8 @@ Each source deck lives under `examples/anonymous-cases/`. The local evidence ima
 
 ## Selected Slides
 
-| Case | Selected slide | Full contact sheet |
-|---|---|---|
-| Case A | ![Case A proof](case-a-paper-proof.png) | [contact sheet](case-a-paper-contact-sheet.png) |
-| Case B | ![Case B proof](case-b-system-proof.png) | [contact sheet](case-b-system-contact-sheet.png) |
-| Case C | ![Case C artifact](case-c-workspace-artifact.png) | [contact sheet](case-c-workspace-contact-sheet.png) |
+| Case | Style | Selected slide | Full contact sheet |
+|---|---|---|---|
+| Case A | Paper atlas | ![Case A proof](case-a-paper-proof.png) | [contact sheet](case-a-paper-contact-sheet.png) |
+| Case B | Systems field manual | ![Case B proof](case-b-system-proof.png) | [contact sheet](case-b-system-contact-sheet.png) |
+| Case C | Homepage grid | ![Case C artifact](case-c-workspace-artifact.png) | [contact sheet](case-c-workspace-contact-sheet.png) |

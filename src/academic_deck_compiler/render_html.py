@@ -636,6 +636,8 @@ body.grammar-paper-atlas h2,
 body.grammar-paper-atlas .spine b,
 body.grammar-paper-atlas .metric strong {{ font-family: "Iowan Old Style", Georgia, serif; }}
 body.grammar-paper-atlas .cover h2 {{ margin-top: .82em; }}
+body.grammar-paper-atlas .slide h2 + .subtitle,
+body.grammar-paper-atlas .cover h2 + .lead {{ margin-top: 2.1rem; }}
 body.grammar-paper-atlas .kicker {{ color: #8c3e2d; }}
 body.grammar-paper-atlas .proof {{ padding: 1.15rem; border-color: #cbb9a2; box-shadow: 0 18px 50px rgba(72,48,28,.12); }}
 body.grammar-paper-atlas .artifact-panel {{ border-color: #cbb9a2; box-shadow: 0 18px 50px rgba(72,48,28,.10); }}
@@ -1942,6 +1944,12 @@ body .proof-dossier .proof-visual {{ height: 56vh; min-height: 21rem; max-height
 body .proof-dossier .proof-notes {{ display: none; }}
 body .proof-ledger .evidence-grid {{ grid-template-columns: minmax(12rem, 15vw) minmax(0, 1fr); gap: 2vw; max-height: 72vh; }}
 body .proof-ledger .proof-visual {{ height: 56vh; min-height: 22rem; max-height: 58vh; }}
+body.grammar-paper-atlas .proof-atlas-spread .evidence-grid {{ grid-template-columns: minmax(0, 1fr) minmax(9rem, 10vw); max-height: 76vh; }}
+body.grammar-paper-atlas .proof-atlas-spread .proof {{ padding: .42rem; }}
+body.grammar-paper-atlas .proof-atlas-spread .proof-visual {{ height: 60vh; max-height: 60vh; }}
+body.grammar-systems-field-manual .proof-ledger .evidence-grid {{ grid-template-columns: minmax(9rem, 11vw) minmax(0, 1fr); gap: 1.4vw; max-height: 74vh; }}
+body.grammar-systems-field-manual .proof-ledger .proof {{ padding: .5rem; }}
+body.grammar-systems-field-manual .proof-ledger .proof-visual {{ height: 58vh; max-height: 58vh; }}
 body .proof-atlas-spread footer,
 body .proof-gallery-split footer,
 body .proof-stage footer,

@@ -75,7 +75,7 @@ uv run academic-deck build \
 
 下面三个匿名 fixture 展示推荐流程：先写 claim-led YAML，使用本地合成证据图，走 HTML-first 渲染和布局审查，最后人工看 contact sheet。源文件在 [`examples/anonymous-cases`](examples/anonymous-cases)，完整 contact sheets 在 [`docs/anonymous_case_gallery`](docs/anonymous_case_gallery)。
 
-| 论文汇报 | 系统评审 | Workspace profile |
+| Paper atlas（论文图谱） | Systems field manual（系统手册） | Homepage grid（主页网格） |
 |---|---|---|
 | <img src="docs/anonymous_case_gallery/case-a-paper-proof.png" alt="匿名论文汇报证据页" width="300"> | <img src="docs/anonymous_case_gallery/case-b-system-proof.png" alt="匿名系统评审证据页" width="300"> | <img src="docs/anonymous_case_gallery/case-c-workspace-artifact.png" alt="匿名 workspace profile artifact 页" width="300"> |
 

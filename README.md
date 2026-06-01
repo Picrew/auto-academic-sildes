@@ -77,7 +77,7 @@ uv run academic-deck build \
 
 Three anonymous fixtures show the intended loop: claim-led YAML, local synthetic evidence, HTML-first rendering, layout audit, and a final visual review. See the source decks in [`examples/anonymous-cases`](examples/anonymous-cases) and the full contact sheets in [`docs/anonymous_case_gallery`](docs/anonymous_case_gallery).
 
-| Paper talk | System review | Workspace profile |
+| Paper atlas | Systems field manual | Homepage grid |
 |---|---|---|
 | <img src="docs/anonymous_case_gallery/case-a-paper-proof.png" alt="Anonymous paper-talk proof slide" width="300"> | <img src="docs/anonymous_case_gallery/case-b-system-proof.png" alt="Anonymous system-review proof slide" width="300"> | <img src="docs/anonymous_case_gallery/case-c-workspace-artifact.png" alt="Anonymous workspace profile artifact slide" width="300"> |
 

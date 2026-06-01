@@ -1,15 +1,15 @@
 deck_id: anonymous-paper-routing
 title: Anonymous Paper Talk Case
 subtitle: A synthetic paper-talk fixture with no real authors, institutions, or private data
-visual_grammar: maison-research-catalog
+visual_grammar: paper-atlas
 footer: Anonymous Case A / Academic Deck Compiler
 contact: synthetic fixture
 assets_dir: examples/anonymous-cases/assets/images
 slides:
   - kind: cover
     kicker: Case A
-    title: A small routing rule makes the failure visible before release
-    subtitle: This deck mimics a paper talk using only fictional evidence and neutral labels.
+    title: Routing makes hidden uncertainty visible before release
+    subtitle: A fictional paper-talk fixture with neutral labels and local evidence.
     metrics:
       - value: "1"
         label: central bet
@@ -20,8 +20,8 @@ slides:
     labels: [Problem, Method, Evidence, Boundary]
   - kind: thesis
     kicker: Claim
-    title: The method matters because it turns hidden uncertainty into a reviewable signal
-    subtitle: The argument starts with observability, then introduces the routing rule as a modest intervention.
+    title: Visible uncertainty turns one failure mode into a reviewable signal
+    subtitle: The argument moves from observability to a small routing rule.
     metrics:
       - value: signal
         label: what becomes visible
@@ -36,8 +36,8 @@ slides:
   - kind: matrix
     layout: matrix-ledger
     kicker: Method
-    title: The paper can be explained as three decisions rather than a model tour
-    subtitle: Each decision changes what the reviewer can see.
+    title: Explain the paper as three review decisions
+    subtitle: Each decision changes what becomes inspectable.
     labels: [Expose signal, Route cases, Recheck boundary, Decision ledger]
     metrics:
       - value: "3"
@@ -57,21 +57,19 @@ slides:
     layout: proof-showcase
     kicker: Synthetic result
     title: Routing improves after uncertainty becomes visible
-    subtitle: A local synthetic figure keeps the claim bounded.
+    subtitle: The figure uses fictional local values.
     image: case_a_routing_ablation.png
     evidence:
       image: case_a_routing_ablation.png
       crop: {x: 0.03, y: 0.05, w: 0.94, h: 0.88}
       caption: "Synthetic ablation ledger: baseline route versus reviewable routed variant."
       source: "Local anonymous fixture image generated for Case A in examples/anonymous-cases/assets/images."
-      callouts:
-        - {x: 0.61, y: 0.35, text: review path separates}
-        - {x: 0.77, y: 0.64, text: boundary stays visible}
+      callouts: []
     bullets: []
   - kind: close
     kicker: Takeaway
-    title: A comfortable paper talk leaves the audience with the measured bet
-    subtitle: The final slide names the intervention, proof, and boundary without pretending the synthetic case is real.
+    title: End with the measured bet
+    subtitle: Name intervention, proof, boundary, and the synthetic limit without overstating the fixture.
     metrics:
       - value: signal
         label: measured
